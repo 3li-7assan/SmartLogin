@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark">
+
+    
+    <section id="login-page" class="vh-100 d-block py-5">
+        <div class="container text-center vstack gap-4">
+            <h1 class="text-info">Login Smart System</h1>
+            <input id="email" type="text" placeholder="enter your email" class="border border-1 w-75 mx-auto p-2 bg-dark text-white">
+            <input id="password" type="password" placeholder="enter your password" class="border border-1 w-75 mx-auto p-2 bg-dark text-white">
+            <div id="empty-validation-alert" class="d-none alert alert-warning border-0 bg-dark fw-bold" role="alert">
+                <strong>All inputs are required</strong>
+            </div>
+            <div id="error-alert" class="alert alert-warning fw-bold bg-dark border-0 d-none" role="alert">
+                <strong>email or password not exist</strong>
+            </div>
+            
+            
+            <button  id="login-btn" class="w-75 mx-auto">
+                log in 
+                </button>
+                <p class="text-white">Don’t have an account? <span id="login-anchor">Sign up</span></p>
+           
+        </div>
+    </section>
+
+
+    
+    <section id="signup-page" class="d-none py-5 vh-100">
+        <div class="container text-center vstack gap-4">
+            <h1 class="text-info-emphasis">Login Smart System</h1>
+            <input id="user-name" type="text" placeholder="enter your name" class="w-75 mx-auto bg-dark text-white border border-1 rounded p-2">
+            <input id="user-email" type="email" placeholder="enter your email" class="w-75 mx-auto bg-dark text-white border border-1 rounded p-2">
+            <input id="user-password" type="password" placeholder="enter your password" class="w-75 mx-auto bg-dark text-white border border-1 rounded p-2">
+            <div id="empty-input-alert" class="d-none alert border-0 bg-dark fw-bold alert-warning" role="alert">
+                <strong>All ihputs are required</strong>
+            </div>
+            <div id="exist-email-alert" class="d-none alert border-0 bg-dark fw-bold alert-warning" role="alert">
+                <strong>email already exists</strong>
+            </div>
+            <div id="success-alert" class="d-none alert border-0 fw-bold bg-dark alert-primary" role="alert">
+                <strong>Success</strong>
+            </div>
+            
+            
+            
+            <button id="signup-btn" class="w-75 mx-auto">Sign Up</button>
+            <p class="text-white">You have an account? <span id="signup-anchor">signin</span></p>
+            
+        </div>
+    </section>
+
+
+
+  
+    <section id="home" class="position-fixed start-0 end-0 d-none">
+        
+     <div class="container">      
+        <div class="nav py-3 d-flex justify-content-between">
+        <h4 class="text-info text-uppercase">Smart Login System</h4>
+        <button id="logout-btn">Log Out</button>
+    </div>
+    </div> 
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+        <h1 id="h1-home" class="text-info"></h1>
+    </div>
+    
+    
+    </section>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script-singup.js"></script>
+</body>
+</html>
